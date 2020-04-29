@@ -567,8 +567,7 @@ a:hover:not(.btn-creditos) {
 # Secção de Apresentação da empresa
 --------------------------------------------------------------*/
 #containerEspecial {
-   width: 100%;
-    background-color: black;
+    width: 100%;
 }
 
 .imgCarousel {
@@ -582,5 +581,21 @@ a:hover:not(.btn-creditos) {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    margin: 0 auto;
+    background-color: black;
+}
+
+.textoSobreposto {
+    position: absolute;
+    top: 25%;
+    right: 80%;
+    margin-left: -120px;
+    margin-top: -75px;
+    background-color: transparent;
+    text-shadow: 2px 2px 2px black;
+    color: #FFF;
+}
+
+.carousel-item{
+    height: 100vh; /* dimensiona o slider à altura do viewport */
+    background-size: cover;
 }
