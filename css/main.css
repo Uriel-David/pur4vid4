@@ -566,10 +566,6 @@ a:hover:not(.btn-creditos) {
 /*--------------------------------------------------------------
 # Secção de Apresentação da empresa
 --------------------------------------------------------------*/
-#containerEspecial {
-    width: 100%;
-}
-
 .imgCarousel {
     user-drag: none;
     -webkit-user-drag: none;
@@ -577,10 +573,9 @@ a:hover:not(.btn-creditos) {
     user-select: none;
 }
 
-.flex {
+#carouselHome {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
     background-color: black;
 }
 
@@ -590,12 +585,47 @@ a:hover:not(.btn-creditos) {
     right: 80%;
     margin-left: -120px;
     margin-top: -75px;
+    font-size: 25px;
+    font-family: "Comic Sans MS", sans-serif;
     background-color: transparent;
     text-shadow: 2px 2px 2px black;
     color: #FFF;
 }
 
-.carousel-item{
-    height: 100vh; /* dimensiona o slider à altura do viewport */
-    background-size: cover;
+.textoSobreposto > h4 {
+    font-size: 35px;
+}
+
+@media (max-width: 576px) {
+    .textoSobreposto {
+        position: absolute;
+        top: 40%;
+        right: 60%;
+        font-size: 12px;
+        font-family: "Comic Sans MS", sans-serif;
+        background-color: transparent;
+        text-shadow: 2px 2px 2px black;
+        color: #FFF;
+    }
+
+    .textoSobreposto > h4 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .textoSobreposto {
+        position: absolute;
+        top: 30%;
+        right: 75%;
+        font-size: 15px;
+        font-family: "Comic Sans MS", sans-serif;
+        background-color: transparent;
+        text-shadow: 2px 2px 2px black;
+        color: #FFF;
+    }
+
+    .textoSobreposto > h4 {
+        font-size: 20px;
+    }
 }
