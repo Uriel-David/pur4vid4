@@ -6,7 +6,7 @@ body, html {
 }
 
 body {
-
+    font-family: "PT Sans Caption", sans-serif;
 }
 
 a {
@@ -26,7 +26,6 @@ a:hover:not(.btn-creditos) {
 }
 
 .btn-primary {
-    font-family: arial, sans-serif;
     color: #FFFFFF !important;
     font-size: 14px;
     box-shadow: 1px 1px 1px #000000;
@@ -43,7 +42,7 @@ a:hover:not(.btn-creditos) {
 }
 
 .btn-primary:hover {
-    color: tomato !important;
+    color: brown !important;
     background: #468CCF;
     background: linear-gradient(top,  #468CCF,  #2EFF5F);
     background: -ms-linear-gradient(top,  #468CCF,  #2EFF5F);
@@ -52,7 +51,6 @@ a:hover:not(.btn-creditos) {
 }
 
 .btn-secondary {
-    font-family: arial, sans-serif;
     color: #FFFFFF !important;
     font-size: 14px;
     padding: 8px 12px;
@@ -65,8 +63,7 @@ a:hover:not(.btn-creditos) {
 
 .btn-secondary:hover {
     color: #EB0000 !important;
-    text-shadow: 1px 1px 1px #FFFFFF;
-    background: #00E3D4;
+    background: #999999;
 }
 
 /*--------------------------------------------------------------
@@ -399,11 +396,9 @@ a:hover:not(.btn-creditos) {
     width: 200px;
     vertical-align: middle;
     font-size: 20px;
-    font-family: "Comic Sans MS", serif;
 }
 
 #productPrice {
-    font-family: 'Poppins', serif;
     font-weight: 500;
     font-size: 28px;
 }
@@ -529,8 +524,7 @@ a:hover:not(.btn-creditos) {
     border: none;
     width: 150px;
     display: block;
-    margin: 0 auto;
-    margin-top: 10px;
+    margin: 10px auto 0;
     line-height: 25px;
 }
 
@@ -555,7 +549,6 @@ a:hover:not(.btn-creditos) {
     opacity: 20%;
     font-size: 13px;
     border-radius: 8px;
-
 }
 
 #subir:hover {
@@ -566,6 +559,42 @@ a:hover:not(.btn-creditos) {
 /*--------------------------------------------------------------
 # Secção de Apresentação da empresa
 --------------------------------------------------------------*/
+#carouselHome {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+.carousel-item {
+    width: 100%;
+    max-height: 700px;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    height: 700px;
+    width: 100%;
+    animation-duration: 5s;
+    animation-name: efeitoZoom;
+}
+
+@keyframes efeitoZoom {
+    from {
+        -moz-transform: scale(0.7);
+        -webkit-transform: scale(0.7);
+        transform: scale(0.7);
+        -moz-transition: all 5s;
+        -webkit-transition: all 5s;
+        transition: all 5s;
+    }
+
+    to {
+        -moz-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+
 .imgCarousel {
     user-drag: none;
     -webkit-user-drag: none;
@@ -573,52 +602,28 @@ a:hover:not(.btn-creditos) {
     user-select: none;
 }
 
-#carouselHome {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: black;
-}
-
 .textoSobreposto {
     position: absolute;
-    top: 25%;
-    right: 80%;
-    margin-left: -120px;
-    margin-top: -75px;
+    top: 20%;
+    left: 20%;
     font-size: 25px;
-    font-family: "Comic Sans MS", sans-serif;
+    font-family: "Permanent Marker", sans-serif;
     background-color: transparent;
     text-shadow: 2px 2px 2px black;
-    color: #FFF;
+    color: #FFFFFF;
 }
 
 .textoSobreposto > h4 {
     font-size: 35px;
-}
-
-@media (max-width: 576px) {
-    .textoSobreposto {
-        position: absolute;
-        top: 40%;
-        right: 60%;
-        font-size: 12px;
-        font-family: "Comic Sans MS", sans-serif;
-        background-color: transparent;
-        text-shadow: 2px 2px 2px black;
-        color: #FFF;
-    }
-
-    .textoSobreposto > h4 {
-        font-size: 16px;
-    }
+    font-weight: 800;
 }
 
 @media (max-width: 768px) {
     .textoSobreposto {
         position: absolute;
-        top: 30%;
-        right: 75%;
-        font-size: 15px;
+        top: 20%;
+        left: 20%;
+        font-size: 18px;
         font-family: "Comic Sans MS", sans-serif;
         background-color: transparent;
         text-shadow: 2px 2px 2px black;
@@ -626,6 +631,23 @@ a:hover:not(.btn-creditos) {
     }
 
     .textoSobreposto > h4 {
-        font-size: 20px;
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 576px) {
+    .textoSobreposto {
+        position: absolute;
+        top: 20%;
+        left: 20%;
+        font-size: 10px;
+        font-family: "Comic Sans MS", sans-serif;
+        background-color: transparent;
+        text-shadow: 2px 2px 2px black;
+        color: #FFF;
+    }
+
+    .textoSobreposto > h4 {
+        font-size: 18px;
     }
 }

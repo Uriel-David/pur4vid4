@@ -1,6 +1,6 @@
 // JAVASCRIPT
-$(document).ready(function() {
-    // Fazer a página voltar ao topo
+$(document).ready(function (keyframes, options) {
+    // Fazer a página voltar ao topo \\
     let windowH = $(window).height()/2;
 
     $(window).on('scroll',function(){
@@ -12,9 +12,10 @@ $(document).ready(function() {
     });
 
     $('#subir').click(function(){
-        $('html, body').animate({scrollTop: 0}, 300);
-        return false;
+        $('html, body').animate({scrollTop: 0}, 500);
+        return false
     });
+    // Fim deste bloco \\
 
     // slide-show para os produtos e suas configurações
     function atualizarInformacoes() {
@@ -51,8 +52,9 @@ $(document).ready(function() {
     $('.slide-slick').on('afterChange', function () {
         atualizarInformacoes();
     });
+    // Fim deste bloco \\
 
-    //root
+    // Bloco de códigos para transformar o slide show em um objeto "dragglebla"
     let mc = new Hammer(document.getElementById("carouselHome"));
 
     //mouse pointer state
@@ -178,4 +180,5 @@ $(document).ready(function() {
             initialize();
         }
     });
+    // Fim deste bloco \\
 });
