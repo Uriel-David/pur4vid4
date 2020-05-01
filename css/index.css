@@ -1,0 +1,292 @@
+/*----------------------------------------------------------------
+# Container com informações secundárias dos containers principais
+-----------------------------------------------------------------*/
+.infoSecundary {
+    text-align: center;
+    font-size: 20px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+.linhaVerticalDireita {
+    border-right: 2px solid;
+}
+
+.linhaVerticalEsquerda {
+    border-left: 2px solid;
+}
+
+/*--------------------------------------------------------------
+# Secção de Apresentação da Empresa
+--------------------------------------------------------------*/
+#apresentacaoDoSite {
+    width: 100%;
+    height: 90vh;
+    background: url("assets/img-2.jpg") top center;
+    background-size: cover;
+    position: relative;
+}
+
+#apresentacaoDoSite:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#apresentacaoDoSite .apresentacao-container {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 15px;
+}
+
+#apresentacaoDoSite h1 {
+    margin: 0 0 10px 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #fff;
+}
+
+#apresentacaoDoSite h2 {
+    color: #eee;
+    margin-bottom: 50px;
+    font-size: 24px;
+}
+
+@media (max-width: 768px) {
+    #apresentacaoDoSite {
+        height: 100vh;
+    }
+    #apresentacaoDoSite h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    #apresentacaoDoSite h2 {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+}
+
+/*--------------------------------------------------------------
+# Secção de produtos do Site
+--------------------------------------------------------------*/
+.containerProduct {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    background-image: url("assets/sand.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    background-attachment: scroll;
+}
+
+#infoProduct {
+    color: white;
+    letter-spacing: -1px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+}
+
+.slide-slick {
+    padding: 0 5px 0 5px;
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+.slide-slick .slide {
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7);
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+    outline: none !important;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.slick-center:hover {
+    transition: 1s;
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+    -webkit-box-shadow: 0 0 10px #999;
+    -moz-box-shadow: 0 0 10px #999;
+    box-shadow: 0 0 10px #999;
+}
+
+.arrow {
+    display: inline-block;
+    margin: 0 10px;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: 70% auto;
+    background-position: center;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+#arrowNext:hover {
+    transition: 0.8s;
+    -webkit-transform: translateX(10px) translateY(-2px);
+    -ms-transform: translateX(10px) translateY(-2px);
+    transform: translateX(10px) translateY(-2px);
+}
+
+#arrowPrev:hover {
+    transition: 0.8s;
+    -webkit-transform: translateX(-10px) translateY(-2px);
+    -ms-transform: translateX(-10px) translateY(-2px);
+    transform: translateX(-10px) translateY(-2px);
+}
+
+.description {
+    display: inline-block;
+    height: 40px;
+    margin-bottom: 20px;
+    width: 200px;
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+#productPrice {
+    font-weight: 500;
+    font-size: 28px;
+}
+
+@media screen and (max-width: 576px) {
+    .slide-slick .slide {
+        -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        transform: scale(0.8);
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        transition: 0.3s;
+        outline: none !important;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+
+    .slick-center:hover {
+        transition: 1s;
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+        -webkit-box-shadow: 0 0 10px #999;
+        -moz-box-shadow: 0 0 10px #999;
+        box-shadow: 0 0 10px #999;
+    }
+}
+
+/*--------------------------------------------------------------
+# Secção de Apresentação da empresa
+--------------------------------------------------------------*/
+#carouselHome {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+.carousel-item {
+    width: 100%;
+    max-height: 700px;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    height: 700px;
+    width: 100%;
+    animation-duration: 5s;
+    animation-name: efeitoZoom;
+}
+
+@keyframes efeitoZoom {
+    from {
+        -moz-transform: scale(0.7);
+        -webkit-transform: scale(0.7);
+        transform: scale(0.7);
+        -moz-transition: all 5s;
+        -webkit-transition: all 5s;
+        transition: all 5s;
+    }
+
+    to {
+        -moz-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+
+.imgCarousel {
+    user-drag: none;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    user-select: none;
+}
+
+.textoSobreposto {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    font-size: 25px;
+    font-family: "Permanent Marker", sans-serif;
+    background-color: transparent;
+    text-shadow: 2px 2px 2px black;
+    color: #FFFFFF;
+}
+
+.textoSobreposto > h4 {
+    font-size: 35px;
+    font-weight: 800;
+}
+
+@media (max-width: 768px) {
+    .textoSobreposto {
+        position: absolute;
+        top: 20%;
+        left: 20%;
+        font-size: 18px;
+        font-family: "Comic Sans MS", sans-serif;
+        background-color: transparent;
+        text-shadow: 2px 2px 2px black;
+        color: #FFF;
+    }
+
+    .textoSobreposto > h4 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 576px) {
+    .textoSobreposto {
+        position: absolute;
+        top: 20%;
+        left: 20%;
+        font-size: 10px;
+        font-family: "Comic Sans MS", sans-serif;
+        background-color: transparent;
+        text-shadow: 2px 2px 2px black;
+        color: #FFF;
+    }
+
+    .textoSobreposto > h4 {
+        font-size: 18px;
+    }
+}
