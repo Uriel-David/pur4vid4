@@ -118,6 +118,16 @@ a:hover:not(.btn-creditos) {
     transform: rotateX(-90deg) translateY(100%);
 }
 
+.efeitoBtnPrimary {
+    border-radius: 4px;
+    opacity: 0.8;
+    transition: 1s;
+}
+
+.efeitoBtnPrimary:hover {
+    opacity: 1;
+}
+
 /*--------------------------------------------------------------
 # Divisórias das secções
 --------------------------------------------------------------*/

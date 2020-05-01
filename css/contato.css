@@ -2,12 +2,16 @@
 # Ajuste no container do conteudo de toda a pagina
 --------------------------------------------------------------*/
 main {
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 /*--------------------------------------------------------------
 # Formulário de contato
 --------------------------------------------------------------*/
+#containerContato > .row {
+    width: 100%;
+}
+
 .infoContato {
     font-size: 18px;
 }
@@ -32,7 +36,6 @@ main {
     -webkit-border-radius: 5px;
     border-radius: 5px;
     height: 40px;
-    margin-bottom: 10px;
     border-bottom: 1px solid #ccc;
     border-left: 1px solid #ccc;
     text-indent: 20px;
@@ -57,7 +60,6 @@ main {
     width: 100%;
     font-size: 18px;
     border-radius: 4px;
-    color: #fff;
     opacity: 0.8;
     margin-bottom: 20px;
     transition: 1s;
@@ -65,4 +67,11 @@ main {
 
 .form-contact-button:hover {
     opacity: 1;
+}
+
+/*--------------------------------------------------------------
+# Formulário de contato
+--------------------------------------------------------------*/
+#accordion > .tituloContato {
+    text-align: right;
 }
