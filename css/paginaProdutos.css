@@ -1,0 +1,22 @@
+/*--------------------------------------------------------------
+# Ajuste no container do conteudo de toda a pagina
+--------------------------------------------------------------*/
+main {
+    margin-top: 80px;
+}
+
+/*--------------------------------------------------------------
+# Página do produto1
+--------------------------------------------------------------*/
+.dropdown-item.active, .dropdown-item:active {
+    background-color: transparent;
+    color: #1ecd75 !important;
+}
+
+.containerPaginaProduto > .row {
+    width: 100%;
+}
+
+.exibeProduto {
+    text-align: center;
+}

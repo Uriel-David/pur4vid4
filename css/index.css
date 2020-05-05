@@ -84,7 +84,7 @@
 /*--------------------------------------------------------------
 # Secção de produtos do Site
 --------------------------------------------------------------*/
-.containerProduct {
+.containerProduto {
     width: 100%;
     display: inline-block;
     text-align: center;
@@ -95,7 +95,7 @@
     background-attachment: scroll;
 }
 
-#infoProduct {
+#infoProduto {
     color: white;
     letter-spacing: -1px;
     background: rgb(0, 0, 0);
