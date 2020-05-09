@@ -70,8 +70,18 @@ main {
 }
 
 /*--------------------------------------------------------------
-# Formulário de contato
+# FAQ
 --------------------------------------------------------------*/
 #accordion > .tituloContato {
     text-align: right;
+}
+
+@media (max-width: 768px) {
+    #accordion {
+        background-color: black;
+    }
+
+    #accordion > .tituloContato {
+        text-align: left;
+    }
 }

@@ -240,6 +240,12 @@ a:hover:not(.btn-creditos) {
     padding: 5px;
 }
 
+@media (max-width: 768px) {
+    .iconCart {
+        
+    }
+}
+
 /*--------------------------------------------------------------
 # Secção de produtos do Site
 --------------------------------------------------------------*/
@@ -345,7 +351,7 @@ a:hover:not(.btn-creditos) {
     color: limegreen;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     .rodapeSite {
         text-align: center;
     }
