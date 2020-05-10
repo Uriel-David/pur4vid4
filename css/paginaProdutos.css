@@ -18,6 +18,10 @@ main {
     font-weight: 700;
 }
 
+.containerProdutoCompra > .tituloProdutoPagina {
+    text-align: right;
+}
+
 .form-contact {
     width: 100%;
 }

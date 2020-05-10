@@ -77,10 +77,6 @@ main {
 }
 
 @media (max-width: 768px) {
-    #accordion {
-        background-color: black;
-    }
-
     #accordion > .tituloContato {
         text-align: left;
     }

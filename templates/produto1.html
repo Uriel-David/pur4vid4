@@ -63,66 +63,10 @@
 
     <!-- Conteudo principal da pagina -->
     <main>
+
         <!-- Container principal de exibição do produto -->
         <section class="containerPaginaProduto">
             <div class="row">
-                <div class="col-sm-12 col-md-6">
-                    <div class="container containerProdutoCompra">
-                        <h4 class="text-uppercase tituloProdutoPagina">Escolha seu modelo...</h4>
-                        <div class="dropdown-divider"></div>
-                        <p class="text-justify">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-
-                        <form>
-                            <div class="form-row">
-                                <div class="form-group col-md-6">
-                                    <label for="inputEmail4">Email</label>
-                                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <label for="inputPassword4">Password</label>
-                                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="inputAddress">Address</label>
-                                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                            </div>
-                            <div class="form-group">
-                                <label for="inputAddress2">Address 2</label>
-                                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group col-md-6">
-                                    <label for="inputCity">City</label>
-                                    <input type="text" class="form-control" id="inputCity">
-                                </div>
-                                <div class="form-group col-md-4">
-                                    <label for="inputState">State</label>
-                                    <select id="inputState" class="form-control">
-                                        <option selected>Choose...</option>
-                                        <option>...</option>
-                                    </select>
-                                </div>
-                                <div class="form-group col-md-2">
-                                    <label for="inputZip">Zip</label>
-                                    <input type="text" class="form-control" id="inputZip">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                                    <label class="form-check-label" for="gridCheck">
-                                        Check me out
-                                    </label>
-                                </div>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Sign in</button>
-                        </form>
-                    </div>
-                </div>
-
                 <div class="col-sm-12 col-md-6">
                     <div class="container exibeProduto">
                         <h4 class="text-uppercase tituloProdutoPagina">img1</h4>
@@ -134,8 +78,75 @@
                         <img src="../css/assets/imgTest2.png" alt="img1" />
                     </div>
                 </div>
+
+                <div class="col-sm-12 col-md-6">
+                    <div class="container containerProdutoCompra">
+                        <h4 class="text-uppercase tituloProdutoPagina">Escolha seu modelo...</h4>
+                        <div class="dropdown-divider"></div>
+                        <p class="text-justify">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+
+                        <form action="../php/paginaProdutos.php" class="form-contact" method="post" tabindex="1" name="formProduto">
+                            <div class="form-group">
+                                <label for="modeloPrancha">Tamanho do Modelo*<sup>(obrigatório)</sup></label>
+                                <select id="modeloPrancha" class="form-control form-contact-input" name="modeloPrancha" required>
+                                    <option value="" disabled selected>Escolha seu modelo...</option>
+                                    <option data-preco="300" value="1">0'0</option>
+                                    <option data-preco="400" value="2">0'0</option>
+                                    <option data-preco="500" value="3">0'0</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="addExtra1">Adicional 1<sup>(opcional)</sup></label>
+                                <select id="addExtra1" class="form-control form-contact-input">
+                                    <option selected>Nada adicionado</option>
+                                    <option>0'0</option>
+                                    <option>0'0</option>
+                                    <option>0'0</option>
+                                </select>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-4">
+                                    <label for="addExtra2">Adicional 2<sup>(opcional)</sup></label>
+                                    <select id="addExtra2" class="form-control form-contact-input">
+                                        <option selected>Nada adicionado</option>
+                                        <option>0'0</option>
+                                        <option>0'0</option>
+                                        <option>0'0</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="addExtra3">Adicional 3<sup>(opcional)</sup></label>
+                                    <select id="addExtra3" class="form-control form-contact-input">
+                                        <option selected>Nada adicionado</option>
+                                        <option>0'0</option>
+                                        <option>0'0</option>
+                                        <option>0'0</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="addExtra4">Adicional 4<sup>(opcional)</sup></label>
+                                    <select id="addExtra4" class="form-control form-contact-input">
+                                        <option selected>Nada adicionado</option>
+                                        <option>0'0</option>
+                                        <option>0'0</option>
+                                        <option>0'0</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="informacoesAdd">Informações adicionais</label>
+                                <textarea id="informacoesAdd" class="form-control form-contact-textarea" rows="6" name="informacoesAdd" placeholder="Escreva seu texto aqui..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary form-contact-button" id="btnCarrinho">Adicione ao carrinho</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </section>
+        <!-- Final do container -->
+
     </main>
     <!-- Final conteudo principal da pagina -->
 
@@ -194,5 +205,6 @@
     <!-- script com as princiapais funções do JS do Site -->
     <script src="../js/main.js" type="text/javascript"></script>
     <script src="../js/AOS.js" type="text/javascript"></script>
+    <script src="../js/paginaProdutos.js" type="text/javascript"></script>
 </body>
 </html>

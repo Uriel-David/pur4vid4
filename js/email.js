@@ -1,4 +1,4 @@
-function validaForm(frm) {
+function validaFormContato(frm) {
     /*
     o parâmetro frm desta função significa: this.form,
     pois a chamada da função - validaForm(this) foi
