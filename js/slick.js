@@ -5,7 +5,7 @@ $(document).ready(function (keyframes, options) {
         $('#productName').text($('.slick-center').data("name"));
         let productPrice = parseFloat($('.slick-center').data("price")).toLocaleString("pt-BR", {
             style: "currency",
-            currency: "BRL",
+            currency: "EUR",
             minimumFractionDigits: 2
         });
         $('#productPrice').text(productPrice);
