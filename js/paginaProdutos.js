@@ -12,7 +12,7 @@ $(document).ready(function (keyframes, options) {
     //Função para adicionar o preço no botão de adicionar o carrinho dinâmicamente
     function addPreco() {
         // Recupera valores do Select com o modelo de prancha escolhido
-        idModelo = $("#modeloPrancha").find(":selected").val();
+        idModelo = $("#tamanhoPrancha").find(":selected").val();
 
         if (idModelo === "5'8") {
             modeloPreco = 300;
@@ -73,10 +73,10 @@ $(document).ready(function (keyframes, options) {
     }
 
     // verifica quando o Select com o modelo da prancha muda e então altera o valor do produto com a função 'addPreco()'
-    $("#modeloPrancha").change(function() {
+    $("#tamanhoPrancha").change(function() {
         addPreco();
     });
-    $("#modeloPrancha").trigger("change");
+    $("#tamanhoPrancha").trigger("change");
 
     // verifica quando o Select com o adicional 1 muda e então altera o valor do produto com a função 'addPreco()'
     $("#addExtra1").change(function() {
