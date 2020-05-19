@@ -27,36 +27,36 @@ $(document).ready(function (keyframes, options) {
         // Recupera valores do Select do adicional 1
         idAdd1 = $("#addExtra1").find(":selected").val();
 
-        if (idAdd1 === "300") {
+        if (idAdd1 === "addExtra1") {
             addExtra1Preco = 300;
-        } else if (idAdd1 === "") {
+        } else if (idAdd1 === "noAddExtra1") {
             addExtra1Preco = 0;
         }
 
         // Recupera valores do Select do adicional 2
         idAdd2= $("#addExtra2").find(":selected").val();
 
-        if (idAdd2 === "100") {
+        if (idAdd2 === "addExtra2") {
             addExtra2Preco = 100;
-        } else if (idAdd2 === "") {
+        } else if (idAdd2 === "noAddExtra2") {
             addExtra2Preco = 0;
         }
 
         // Recupera valores do Select do adicional 3
         idAdd3 = $("#addExtra3").find(":selected").val();
 
-        if (idAdd3 === "50") {
+        if (idAdd3 === "addExtra3") {
             addExtra3Preco = 50;
-        } else if (idAdd3 === "") {
+        } else if (idAdd3 === "noAddExtra3") {
             addExtra3Preco = 0;
         }
 
         // Recupera valores do Select do adicional 4
         idAdd4 = $("#addExtra4").find(":selected").val();
 
-        if (idAdd4 === "150") {
+        if (idAdd4 === "addExtra4") {
             addExtra4Preco = 150;
-        } else if (idAdd4 === "") {
+        } else if (idAdd4 === "noAddExtra4") {
             addExtra4Preco = 0;
         }
 
