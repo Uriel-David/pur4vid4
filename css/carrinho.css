@@ -6,26 +6,26 @@ main {
 }
 
 /*--------------------------------------------------------------
-# Página do produto1: Formulário para escolha do produto
+# Página do produto1: Formulário para compra
 --------------------------------------------------------------*/
-.formPaginaProduto {
-    margin-left: 20px;
+.border-top {
+    border-top: 1px solid #e5e5e5;
 }
 
-.tituloProdutoPagina {
-    font-family: "Shadows Into Light", sans-serif;
-    font-size: 30px;
-    font-weight: 700;
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
 }
 
-.containerProdutoCompra > .tituloProdutoPagina {
-    text-align: right;
+.border-top-gray {
+    border-top-color: #adb5bd;
 }
 
-@media (max-width: 768px) {
-    .containerProdutoCompra > .tituloProdutoPagina {
-        text-align: center;
-    }
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+.lh-condensed {
+    line-height: 1.25;
 }
 
 .form-contact {
@@ -73,20 +73,4 @@ main {
 
 .form-contact-button:hover {
     opacity: 1;
-}
-
-/*--------------------------------------------------------------
-# Página do produto1: Vizualização do produto
---------------------------------------------------------------*/
-.dropdown-item.active, .dropdown-item:active {
-    background-color: transparent;
-    color: #1ecd75 !important;
-}
-
-.containerPaginaProduto > .row {
-    width: 100%;
-}
-
-.exibeProduto {
-    text-align: center;
 }
