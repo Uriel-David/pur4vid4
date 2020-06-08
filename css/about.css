@@ -1,0 +1,122 @@
+/*--------------------------------------------------------------
+# Secção de Apresentação da empresa - Slide Show
+--------------------------------------------------------------*/
+#carouselHome {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+.carousel-item {
+    width: 100%;
+    max-height: 700px;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    height: 700px;
+    width: 100%;
+    animation-duration: 2s;
+    animation-name: efeitoZoom;
+}
+
+@keyframes efeitoZoom {
+    from {
+        -moz-transform: scale(0.7);
+        -webkit-transform: scale(0.7);
+        transform: scale(0.7);
+        -moz-transition: all 5s;
+        -webkit-transition: all 5s;
+        transition: all 5s;
+    }
+
+    to {
+        -moz-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+
+.imgCarousel {
+    user-drag: none;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    user-select: none;
+}
+
+.textoSobreposto {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    font-size: 25px;
+    font-family: "Permanent Marker", sans-serif;
+    background-color: transparent;
+    text-shadow: 2px 2px 2px black;
+    color: #FFFFFF;
+}
+
+.textoSobreposto > h4 {
+    font-size: 35px;
+    font-weight: 800;
+}
+
+@media (max-width: 768px) {
+    .textoSobreposto {
+        position: absolute;
+        top: 20%;
+        left: 20%;
+        font-size: 18px;
+        font-family: "Comic Sans MS", sans-serif;
+        background-color: transparent;
+        text-shadow: 2px 2px 2px black;
+        color: #FFF;
+    }
+
+    .textoSobreposto > h4 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 576px) {
+    .textoSobreposto {
+        position: absolute;
+        top: 20%;
+        left: 20%;
+        font-size: 10px;
+        font-family: "Comic Sans MS", sans-serif;
+        background-color: transparent;
+        text-shadow: 2px 2px 2px black;
+        color: #FFF;
+    }
+
+    .textoSobreposto > h4 {
+        font-size: 18px;
+    }
+}
+
+/*--------------------------------------------------------------
+# Secção de Apresentação da empresa - Texto introdutório
+--------------------------------------------------------------*/
+.apresentacaoEmpresa {
+    background-color: #2d6797;
+    opacity: 70%;
+}
+
+.textoApresentacao {
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+
+.tituloPaginaSobre {
+    font-family: "Shadows Into Light", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.conteudoSobreEmpresa {
+    color: #FFFFFF;
+    text-align: center;
+}
+

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Tag's meta do site -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
@@ -9,7 +8,7 @@
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../css/main.css" type="text/css">
-    <link rel="stylesheet" href="../css/paginaProdutos.css" type="text/css">
+    <link rel="stylesheet" href="../css/about.css" type="text/css">
     <!-- Fonts Google -->
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
@@ -40,13 +39,13 @@
                     <li class="nav-item efeito efeitoMudaBorda">
                         <a class="nav-link" href="../index.html">Home</a>
                     </li>
-                    <li class="nav-item dropdown efeito efeitoMudaBorda">
+                    <li class="nav-item active dropdown efeito efeitoMudaBorda">
                         <a class="nav-link" href="#">About</a>
                     </li>
-                    <li class="nav-item active dropdown">
+                    <li class="nav-item dropdown">
                         <a class="nav-link efeito efeitoMudaBorda" href="#" data-toggle="dropdown" role="button">Products</a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item active" href="produto1.html">Product 1</a>
+                            <a class="dropdown-item" href="#">Product 1</a>
                             <a class="dropdown-item" href="#">Product 2</a>
                             <a class="dropdown-item" href="#">Product 3</a>
                             <a class="dropdown-item" href="#">Product 4</a>
@@ -57,90 +56,91 @@
                     </li>
                 </ul>
             </div>
-            <div class="iconCart mr-lg-auto"><a href="#"><i class="fas fa-shopping-cart"></i></a></div>
+            <div class="iconCart mr-lg-auto"><a href="carrinho.php"><i class="fas fa-shopping-cart"></i></a></div>
         </nav>
     </header>
     <!-- Final cabeçalho -->
 
     <!-- Conteudo principal da pagina -->
     <main>
+        <!-- Secção com os itens ou notícias em destaque da empresa -->
+        <section>
+            <!-- Criei um carousel para colocar fotos dos itens em destaque ou notícias -->
+            <div id="carouselHome" class="carousel slide" data-ride="carousel">
 
-        <!-- Container principal de exibição do produto -->
-        <section class="containerPaginaProduto">
-            <div class="row">
-                <div class="col-sm-12 col-md-6">
-                    <div class="container exibeProduto">
-                        <h4 class="text-uppercase tituloProdutoPagina">img1</h4>
-                        <div class="dropdown-divider"></div>
-                        <p class="text-justify">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
+                <ol class="carousel-indicators center-block">
+                    <li data-target="#carouselHome" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselHome" data-slide-to="1"></li>
+                    <li data-target="#carouselHome" data-slide-to="2"></li>
+                </ol>
 
-                        <img src="../css/assets/imgTest2.png" alt="img1" />
+                <div class="carousel-inner center-block">
+                    <div class="carousel-item active item">
+                        <img class="imgCarousel d-block img-fluid" src="../css/assets/img-1.jpg" alt="First Slide"/>
+                        <span class="textoSobreposto">
+                            <h4>First Slide</h4>
+                            <p>Hatsune Miku</p>
+                        </span>
+                    </div>
+                    <div class="carousel-item item" data-interval="5000">
+                        <img class="imgCarousel d-block img-fluid" src="../css/assets/img-2.jpg" alt="Second Slide"/>
+                        <span class="textoSobreposto">
+                            <h4>Second Slide</h4>
+                            <p>Bleach</p>
+                        </span>
+                    </div>
+                    <div class="carousel-item item" data-interval="5000">
+                        <img class="imgCarousel d-block img-fluid" src="../css/assets/img-3.png" alt="Third Slide"/>
+                        <span class="textoSobreposto">
+                            <h4>Third Slide</h4>
+                            <p>KonoSuba</p>
+                        </span>
                     </div>
                 </div>
 
-                <div class="col-sm-12 col-md-6">
-                    <div class="container containerProdutoCompra">
-                        <h4 class="text-uppercase tituloProdutoPagina">Escolha seu modelo...</h4>
-                        <div class="dropdown-divider"></div>
-                        <p class="text-justify">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
+                <a class="carousel-control-prev caurosel-control left" href="#carouselHome" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
 
-                        <form action="../templates/carrinho.php" class="form-contact" method="post" tabindex="1" name="formProduto">
-                            <div class="form-group">
-                                <label for="tamanhoPrancha">Tamanho do Modelo*<sup>(obrigatório)</sup></label>
-                                <select id="tamanhoPrancha" class="form-control form-contact-input" name="tamanhoPrancha" required>
-                                    <option value="" disabled selected>Escolha seu modelo...</option>
-                                    <option value="5'8">5'8</option>
-                                    <option value="5'9">5'9</option>
-                                    <option value="6'0">6'0</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="addExtra1">Adicional 1<sup>(opcional)</sup></label>
-                                <select id="addExtra1" class="form-control form-contact-input" name="addExtra1">
-                                    <option value="noAddExtra1" selected>Não adicionar</option>
-                                    <option value="addExtra1">adicionar</option>
-                                </select>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group col-md-4">
-                                    <label for="addExtra2">Adicional 2<sup>(opcional)</sup></label>
-                                    <select id="addExtra2" class="form-control form-contact-input" name="addExtra2">
-                                        <option value="noAddExtra2" selected>Não adicionar</option>
-                                        <option value="addExtra2">adicionar</option>
-                                    </select>
-                                </div>
-                                <div class="form-group col-md-4">
-                                    <label for="addExtra3">Adicional 3<sup>(opcional)</sup></label>
-                                    <select id="addExtra3" class="form-control form-contact-input" name="addExtra3">
-                                        <option value="noAddExtra3" selected>Não adicionar</option>
-                                        <option value="addExtra3">adicionar</option>
-                                    </select>
-                                </div>
-                                <div class="form-group col-md-4">
-                                    <label for="addExtra4">Adicional 4<sup>(opcional)</sup></label>
-                                    <select id="addExtra4" class="form-control form-contact-input" name="addExtra4">
-                                        <option value="noAddExtra4" selected>Não adicionar</option>
-                                        <option value="addExtra4">adicionar</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="informacoesAdd">Informações adicionais<sup>(opcional)</sup></label>
-                                <textarea id="informacoesAdd" class="form-control form-contact-textarea" rows="6" name="informacoesAdd" placeholder="Escreva seu texto aqui..."></textarea>
-                            </div>
-                            <input type="hidden" name="modeloPrancha" value="modelo1">
-                            <input type="hidden" name="add" value="carrinho">
-                            <button type="submit" class="btn btn-primary form-contact-button" id="btnCarrinho">Adicione ao carrinho</button>
-                        </form>
-                    </div>
+                <a class="carousel-control-next caurosel-control right" href="#carouselHome" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section>
+        <!-- Final da secção com os itens ou notícias -->
+
+        <!-- Secção para dividir as secções -->
+        <section>
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><a class="btn-creditos" href="https://www.flaticon.com/br/autores/xnimrodx" target="_blank"><img src="../css/assets/surf.png" width="32px" title="Icon made by xnimrodx from www.flaticon.com" /></a></div>
+                <div class="divider-custom-line"></div>
+            </div>
+        </section>
+        <!-- Final da secção para dividir as secções -->
+
+        <!-- Apresentação de feitos da empresa e aspectos de nossos produtos -->
+        <section class="container-fluid apresentacaoEmpresa">
+            <div class="row">
+                <div class="col textoApresentacao">
+                    <h4 class="tituloPaginaSobre">Who are we?</h4>
+                    <p class="conteudoSobreEmpresa">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
             </div>
         </section>
-        <!-- Final do container -->
+        <!-- Final da secção de apresentação -->
+
+        <!-- Secção para dividir as secções -->
+        <section>
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><a class="btn-creditos" href="https://www.flaticon.com/br/autores/xnimrodx" target="_blank"><img src="../css/assets/surf.png" width="32px" title="Icon made by xnimrodx from www.flaticon.com" /></a></div>
+                <div class="divider-custom-line"></div>
+            </div>
+        </section>
+        <!-- Final da secção para dividir as secções -->
 
     </main>
     <!-- Final conteudo principal da pagina -->
@@ -197,9 +197,11 @@
     <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" crossorigin="anonymous"></script>
     <!-- AOS script da biblioteca para animação de entradas (do tipo fade) -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Hammer JS -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
     <!-- script com as princiapais funções do JS do Site -->
     <script src="../js/main.js" type="text/javascript"></script>
     <script src="../js/AOS.js" type="text/javascript"></script>
-    <script src="../js/paginaProduto1.js" type="text/javascript"></script>
+    <script src="../js/hammer.js" type="text/javascript"></script>
 </body>
 </html>

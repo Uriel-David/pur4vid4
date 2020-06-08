@@ -106,6 +106,7 @@
                         $modeloCliente = "";
                         $idModelo = 0;
                         $valorTotalCarrinho = 0;
+                        $modeloClienteCarrinho = "";
 
                         // verificação do modelo1 que o cliente escolheu
                         if ($modelo == "modelo1" && $tamanhoPrancha == "5'8") {
@@ -224,6 +225,11 @@
                                     <hr />';
 
                                 $valorTotalCarrinho += $valorTotalProduto;
+                                if ($modeloClienteCarrinho == "") {
+                                    $modeloClienteCarrinho .= $exibeProdutos[0]['nome'];
+                                } else {
+                                    $modeloClienteCarrinho .= ' + '.$exibeProdutos[0]['nome'];
+                                }
                             }
                         }
                         // fim do bloco
@@ -305,6 +311,8 @@
                             </div>
                         </div>
                         <hr class="mb-4">
+                        <?php echo '<input type="hidden" name="valorTotalCarrinho" value="'.$valorTotalCarrinho.'" />'; ?>
+                        <?php echo '<input type="hidden" name="nomeProdutoCarrinho" value="'.$modeloClienteCarrinho.'" />'; ?>
                         <button class="btn btn-primary btn-lg btn-block form-contact-button" type="submit">Continue to checkout</button>
                     </form>
                 </div>

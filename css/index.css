@@ -213,7 +213,7 @@
 .carousel-item img {
     height: 700px;
     width: 100%;
-    animation-duration: 5s;
+    animation-duration: 2s;
     animation-name: efeitoZoom;
 }
 
