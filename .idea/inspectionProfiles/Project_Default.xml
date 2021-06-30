@@ -17,6 +17,7 @@
       <Languages>
         <language minSize="13" name="Style Sheets" />
         <language minSize="54" name="JavaScript" />
+        <language minSize="83" name="PHP" />
       </Languages>
     </inspection_tool>
   </profile>

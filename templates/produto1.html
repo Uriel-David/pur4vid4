@@ -41,7 +41,7 @@
                         <a class="nav-link" href="../index.html">Home</a>
                     </li>
                     <li class="nav-item dropdown efeito efeitoMudaBorda">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item active dropdown">
                         <a class="nav-link efeito efeitoMudaBorda" href="#" data-toggle="dropdown" role="button">Products</a>
@@ -57,7 +57,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="iconCart mr-lg-auto"><a href="#"><i class="fas fa-shopping-cart"></i></a></div>
+            <!-- <div class="iconCart mr-lg-auto"><a href="#"><i class="fas fa-shopping-cart"></i></a></div> -->
         </nav>
     </header>
     <!-- Final cabeçalho -->
@@ -88,7 +88,17 @@
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </p>
 
-                        <form action="../templates/carrinho.php" class="form-contact" method="post" tabindex="1" name="formProduto">
+                        <form action="../php/contactSale.php" class="form-contact" method="post" tabindex="1" name="formProduto">
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="nome">Nome*</label>
+                                    <input type="text" id="nome" class="form-control form-contact-input" name="nome" placeholder="Nome" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="email">E-mail*</label>
+                                    <input type="email" id="email" class="form-control form-contact-input" name="email" placeholder="Email" required>
+                                </div>
+                            </div>
                             <div class="form-group">
                                 <label for="tamanhoPrancha">Tamanho do Modelo*<sup>(obrigatório)</sup></label>
                                 <select id="tamanhoPrancha" class="form-control form-contact-input" name="tamanhoPrancha" required>
@@ -98,14 +108,14 @@
                                     <option value="6'0">6'0</option>
                                 </select>
                             </div>
-                            <div class="form-group">
-                                <label for="addExtra1">Adicional 1<sup>(opcional)</sup></label>
-                                <select id="addExtra1" class="form-control form-contact-input" name="addExtra1">
-                                    <option value="noAddExtra1" selected>Não adicionar</option>
-                                    <option value="addExtra1">adicionar</option>
-                                </select>
-                            </div>
                             <div class="form-row">
+                                <div class="form-group col-md-4">
+                                    <label for="addExtra1">Adicional 1<sup>(opcional)</sup></label>
+                                    <select id="addExtra1" class="form-control form-contact-input" name="addExtra1">
+                                        <option value="noAddExtra1" selected>Não adicionar</option>
+                                        <option value="addExtra1">adicionar</option>
+                                    </select>
+                                </div>
                                 <div class="form-group col-md-4">
                                     <label for="addExtra2">Adicional 2<sup>(opcional)</sup></label>
                                     <select id="addExtra2" class="form-control form-contact-input" name="addExtra2">
@@ -120,21 +130,16 @@
                                         <option value="addExtra3">adicionar</option>
                                     </select>
                                 </div>
-                                <div class="form-group col-md-4">
-                                    <label for="addExtra4">Adicional 4<sup>(opcional)</sup></label>
-                                    <select id="addExtra4" class="form-control form-contact-input" name="addExtra4">
-                                        <option value="noAddExtra4" selected>Não adicionar</option>
-                                        <option value="addExtra4">adicionar</option>
-                                    </select>
-                                </div>
                             </div>
                             <div class="form-group">
                                 <label for="informacoesAdd">Informações adicionais<sup>(opcional)</sup></label>
                                 <textarea id="informacoesAdd" class="form-control form-contact-textarea" rows="6" name="informacoesAdd" placeholder="Escreva seu texto aqui..."></textarea>
                             </div>
-                            <input type="hidden" name="modeloPrancha" value="modelo1">
-                            <input type="hidden" name="add" value="carrinho">
-                            <button type="submit" class="btn btn-primary form-contact-button" id="btnCarrinho">Adicione ao carrinho</button>
+                            <!-- <input type="hidden" name="modeloPrancha" value="modelo1"> -->
+                            <!-- <input type="hidden" name="add" value="carrinho"> -->
+                            <!-- <button type="submit" class="btn btn-primary form-contact-button" id="btnCarrinho">Adicione ao carrinho</button> -->
+                            <input type="hidden" name="ass" value="Encomenda modelo1">
+                            <button type="submit" class="btn btn-primary form-contact-button" id="btnEncomenda">Encomendar Produto</button>
                         </form>
                     </div>
                 </div>

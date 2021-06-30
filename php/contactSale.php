@@ -8,8 +8,9 @@ require 'PHPMailer-master/src/SMTP.php';
 // Recebe as informações do formulário
 $nome = $_POST['nome'];
 $email = $_POST['email'];
+$informacoesAdd = $_POST['informacoesAdd'];
+$tamanhoPrancha = $_POST['tamanhoPrancha'];
 $ass = $_POST['ass'];
-$conteudo = $_POST['conteudo'];
 
 // Inicia a classe PHPMailer
 $mail = new PHPMailer();
@@ -23,7 +24,6 @@ $mail -> Host = "smtp.gmail.com";
 // Você pode alterar este parametro para o endereço de SMTP do seu provedor
 $mail -> SMTPSecure = 'tls';
 $mail -> Port = 587;
-
 
 // Usar autenticação SMTP (obrigatório)
 $mail -> SMTPAuth = true;
@@ -47,7 +47,7 @@ $mail -> setFrom($email, $nome);
 $mail -> AddAddress('uriel.david.qaa@gmail.com', 'Pur4Vid4 Surfboards');
 
 // Opcional: mais de um destinatário
-// $mail->AddAddress('fernando@email.com');
+// $mail->AddAddress('exemplo@email.com');
 
 // Opcionais: CC e BCC
 // $mail->AddCC('joana@provedor.com', 'Joana');
@@ -55,16 +55,16 @@ $mail -> AddAddress('uriel.david.qaa@gmail.com', 'Pur4Vid4 Surfboards');
 
 // Definir se o e-mail é em formato HTML ou texto plano
 // Formato HTML . Use "false" para enviar em formato texto simples ou "true" para HTML.
-$mail -> IsHTML();
+$mail -> IsHTML(true);
 
 // Charset (opcional)
 $mail -> CharSet = 'UTF-8';
 
 // Assunto da mensagem
-$mail -> Subject = "$ass";
+$mail -> Subject = "$ass + ($nome)";
 
 // Corpo do email
-$mail -> Body = "$conteudo + $email";
+$mail -> Body = "$informacoesAdd + $email";
 
 // Opcional: Anexos
 // $mail -> AddAttachment("/home/usuario/public_html/documento.pdf", "documento.pdf");
