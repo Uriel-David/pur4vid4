@@ -98,8 +98,7 @@
 # Secção de Apresentação da empresa - Texto introdutório
 --------------------------------------------------------------*/
 .apresentacaoEmpresa {
-    background-color: #2d6797;
-    opacity: 70%;
+    margin-top: 50px;
 }
 
 .textoApresentacao {
@@ -111,12 +110,10 @@
     font-family: "Shadows Into Light", sans-serif;
     font-size: 30px;
     font-weight: 700;
-    color: #FFFFFF;
     text-align: center;
 }
 
 .conteudoSobreEmpresa {
-    color: #FFFFFF;
     text-align: center;
 }
 
