@@ -6,10 +6,10 @@ require 'PHPMailer-master/src/PHPMailer.php';
 require 'PHPMailer-master/src/SMTP.php';
 
 // Recebe as informações do formulário
-$nome = $_POST['nome'];
+$name = $_POST['name'];
 $email = $_POST['email'];
-$informacoesAdd = $_POST['informacoesAdd'];
-$tamanhoPrancha = $_POST['tamanhoPrancha'];
+$addInformation = $_POST['addInformation'];
+$modelSize = $_POST['modelSize'];
 $ass = $_POST['ass'];
 
 // Inicia a classe PHPMailer
@@ -41,7 +41,7 @@ $mail -> SMTPOptions = array( 'ssl' => array( 'verify_peer' => false, 'verify_pe
 
 // Define o remetente
 // Seu e-mail e nome
-$mail -> setFrom($email, $nome);
+$mail -> setFrom($email, $name);
 
 // Define o(s) destinatário(s)
 $mail -> AddAddress('uriel.david.qaa@gmail.com', 'Pur4Vid4 Surfboards');
@@ -61,10 +61,10 @@ $mail -> IsHTML(true);
 $mail -> CharSet = 'UTF-8';
 
 // Assunto da mensagem
-$mail -> Subject = "$ass + ($nome)";
+$mail -> Subject = "$ass + ($name)";
 
 // Corpo do email
-$mail -> Body = "$informacoesAdd + $email";
+$mail -> Body = "$addInformation + $email";
 
 // Opcional: Anexos
 // $mail -> AddAttachment("/home/usuario/public_html/documento.pdf", "documento.pdf");

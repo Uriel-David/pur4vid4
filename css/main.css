@@ -9,7 +9,7 @@ body {
     font-family: "PT Sans Caption", sans-serif;
 }
 
-a {
+a:not(.linkPageProducts) {
     color: #2cd026;
 }
 

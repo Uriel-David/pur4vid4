@@ -22,8 +22,9 @@
 --------------------------------------------------------------*/
 #apresentacaoDoSite {
     width: 100%;
-    height: 90vh;
-    background: url("assets/pagina principal - 1 foto.jpg") top center;
+    height: 95vh;
+    background-image: url("assets/pagina_principal_apresentacao.jpg");
+    background-position: bottom center;
     background-size: cover;
     position: relative;
 }
@@ -54,29 +55,28 @@
 
 #apresentacaoDoSite h1 {
     margin: 0 0 10px 0;
-    font-size: 78px;
-    font-weight: 700;
-    line-height: 56px;
+    font-size: 65px;
+    font-weight: 600;
+    line-height: 45px;
     color: #fff;
+    text-shadow: 0.1em 0.1em 0.2em black
 }
 
 #apresentacaoDoSite h2 {
     color: #eee;
     margin-bottom: 50px;
-    font-size: 24px;
+    font-size: 35px;
+    text-shadow: 0.1em 0.1em 0.2em black
 }
 
 @media (max-width: 768px) {
-    #apresentacaoDoSite {
-        height: 100vh;
-    }
     #apresentacaoDoSite h1 {
-        font-size: 28px;
-        line-height: 36px;
+        font-size: 30px;
+        line-height: 35px;
     }
     #apresentacaoDoSite h2 {
-        font-size: 18px;
-        line-height: 24px;
+        font-size: 20px;
+        line-height: 25px;
         margin-bottom: 30px;
     }
 }
@@ -164,6 +164,35 @@
     width: 200px;
     vertical-align: middle;
     font-size: 20px;
+}
+
+.linkPageProducts:focus, .linkPageProducts.focus {
+    box-shadow: 0 0 0 0.1rem rgba(0, 123, 255, 0.25) !important;
+}
+
+.linkPageProducts {
+    color: #FFFFFF !important;
+    font-size: 14px;
+    box-shadow: 1px 1px 1px #000000;
+    padding: 10px 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    border: 1px solid #000000;
+    background: #0EEE16;
+    background: linear-gradient(top,  #2EFF5F,  #468CCF);
+    background: -ms-linear-gradient(top,  #2EFF5F,  #468CCF);
+    background: -webkit-gradient(linear, left top, left bottom, from(#2EFF5F), to(#468CCF));
+    background: -moz-linear-gradient(top,  #2EFF5F,  #468CCF);
+}
+
+.linkPageProducts:hover {
+    color: brown !important;
+    background: #468CCF;
+    background: linear-gradient(top,  #468CCF,  #2EFF5F);
+    background: -ms-linear-gradient(top,  #468CCF,  #2EFF5F);
+    background: -webkit-gradient(linear, left top, left bottom, from(#468CCF), to(#2EFF5F));
+    background: -moz-linear-gradient(top,  #468CCF,  #2EFF5F);
 }
 
 #productPrice {

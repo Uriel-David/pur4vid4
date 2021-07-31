@@ -34,7 +34,7 @@ main {
 
 .form-contact-input {
     width: 100%;
-    font-size: 18px;
+    font-size: 16px;
     color: #000000 !important;
     background-color: #E9E9E9;
     border: 1px solid #E9E9E9;
@@ -89,4 +89,24 @@ main {
 
 .exibeProduto {
     text-align: center;
+}
+
+/*--------------------------------------------------------------
+# Página do produto1: Vizualização do produto
+--------------------------------------------------------------*/
+.carousel-indicators li {
+    background-color: black;
+}
+
+.carousel-indicators .active {
+    background-color: #367cff;
+}
+
+.imgCarousel {
+    margin-bottom: 40px;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    background-color: #2a2a2a;
+    border-radius: 5px;
 }
