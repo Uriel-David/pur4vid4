@@ -10,6 +10,9 @@ $name = $_POST['name'];
 $email = $_POST['email'];
 $addInformation = $_POST['addInformation'];
 $modelSize = $_POST['modelSize'];
+$blanks = $_POST['Blanks'];
+$sistems = $_POST['Sistems'];
+$carbon = $_POST['Carbon'];
 $ass = $_POST['ass'];
 
 // Inicia a classe PHPMailer
@@ -61,10 +64,18 @@ $mail -> IsHTML(true);
 $mail -> CharSet = 'UTF-8';
 
 // Assunto da mensagem
-$mail -> Subject = "$ass + ($name)";
+$mail -> Subject = "$ass ($name)";
 
 // Corpo do email
-$mail -> Body = "$addInformation + $email";
+$mail -> Body = "<h3>Encomenda do cliente $name</h3><br/>
+                    <p>
+                        Modelo: $modelSize<br/>
+                        Bloco: $blanks<br/>
+                        Sistemas: $sistems<br/>
+                        Carbono: $carbon
+                    </p><br/>
+                 <p>$addInformation</p>
+                 <p>Enviar cobrança para o pagamento do cliente no seguinte e-mail: $email</p>";
 
 // Opcional: Anexos
 // $mail -> AddAttachment("/home/usuario/public_html/documento.pdf", "documento.pdf");
@@ -75,12 +86,13 @@ try {
     $enviado = $mail -> Send();
     if ($enviado)
     {
-        echo "Seu email foi enviado com sucesso!";
-    } else {
-        echo "Houve um erro enviando o email: ".$mail -> ErrorInfo;
+        echo "<script>alert('Email enviado com Sucesso! Aguarde um momento e será redirecionado para a homepage.');</script>";
+        header( "refresh:2;url=/Pur4Vid4/index.html" );
     }
 } catch (Exception $e) {
-    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    echo "<script>alert('Email não foi enviado com Sucesso! Aguarde um momento e será redirecionado de volta a página do produto para que possa refazer o pedido, caso o problema persista entrar em contato conosco para informe do problema.');</script>";
+    header( "refresh:2;url=/Pur4Vid4/templates/product1.html" );
+    //echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
 
 

@@ -8,6 +8,10 @@ main {
 /*--------------------------------------------------------------
 # Página do produto1: Formulário para escolha do produto
 --------------------------------------------------------------*/
+.containerPaginaProduto {
+    background: rgba(195,195,195,0.80);
+}
+
 .formPaginaProduto {
     margin-left: 20px;
 }

@@ -3,6 +3,9 @@
 --------------------------------------------------------------*/
 body, html {
     height: 100%;
+    background-image: url("assets/Originals/teste_background-2.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed; /*altere para scroll para ver a diferença*/
 }
 
 body {
@@ -236,6 +239,11 @@ a:hover:not(.btn-creditos) {
     color: black !important;
 }
 
+.logoHomePage {
+    width: 160px;
+    height:100%;
+}
+
 .iconCart {
     padding: 5px;
 }
@@ -282,6 +290,11 @@ a:hover:not(.btn-creditos) {
     color: white;
     font-weight: bold;
     margin-top: 30px;
+}
+
+.logoFooterpage {
+    width: 300px;
+    height: 100%;
 }
 
 .rodapeSite h2 a {
@@ -348,6 +361,13 @@ a:hover:not(.btn-creditos) {
 @media screen and (max-width: 768px) {
     .rodapeSite {
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .logoFooterpage {
+        width: 200px;
+        height: 100%;
     }
 }
 

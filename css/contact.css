@@ -6,26 +6,24 @@ main {
 }
 
 /*--------------------------------------------------------------
-# Página do produto1: Formulário para compra
+# Formulário de contato
 --------------------------------------------------------------*/
-.border-top {
-    border-top: 1px solid #e5e5e5;
+#containerContato {
+    background: rgba(195,195,195,0.80);
 }
 
-.border-bottom {
-    border-bottom: 1px solid #e5e5e5;
+#containerContato > .row {
+    width: 100%;
 }
 
-.border-top-gray {
-    border-top-color: #adb5bd;
+.infoContato {
+    font-size: 18px;
 }
 
-.box-shadow {
-    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
-}
-
-.lh-condensed {
-    line-height: 1.25;
+.tituloContato {
+    font-family: "Shadows Into Light", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
 }
 
 .form-contact {
@@ -73,4 +71,17 @@ main {
 
 .form-contact-button:hover {
     opacity: 1;
+}
+
+/*--------------------------------------------------------------
+# FAQ
+--------------------------------------------------------------*/
+#accordion > .tituloContato {
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+    #accordion > .tituloContato {
+        text-align: left;
+    }
 }

@@ -8,7 +8,7 @@
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../css/main.css" type="text/css">
-    <link rel="stylesheet" href="../css/about.css" type="text/css">
+    <link rel="stylesheet" href="../css/allProducts.css" type="text/css">
     <!-- Fonts Google -->
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
@@ -21,11 +21,10 @@
     <!-- Slick CSS -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <!-- Ícone da Página -->
-    <link rel="icon" type="image/png" href="../css/assets/favicon.png">
+    <link rel="icon" type="image/png" href="../css/assets/logo_pur4vid4_icon.png">
     <title>Pur4Vid4 Surfboards</title>
 </head>
 <body>
-    <!-- Inicio do Codigo -->
 
     <!-- Cabeçalho com a barra de navegação do Site -->
     <header class="cabecalhoSite">
@@ -39,10 +38,10 @@
                     <li class="nav-item efeito efeitoMudaBorda">
                         <a class="nav-link" href="../index.html">Home</a>
                     </li>
-                    <li class="nav-item active dropdown efeito efeitoMudaBorda">
+                    <li class="nav-item dropdown efeito efeitoMudaBorda">
                         <a class="nav-link" href="about.html">About</a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item active dropdown">
                         <a class="nav-link efeito efeitoMudaBorda" href="#" data-toggle="dropdown" role="button">Products</a>
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="allProducts.html">All Products</a>
@@ -54,11 +53,11 @@
                         </div>
                     </li>
                     <li class="nav-item efeito efeitoMudaBorda">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link" href="../templates/contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
-            <div class="iconCart mr-lg-auto"><a href="carrinho.php"><i class="fas fa-shopping-cart"></i></a></div>
+            <!-- <div class="iconCart mr-lg-auto"><a href="#"><i class="fas fa-shopping-cart"></i></a></div> -->
         </nav>
     </header>
     <!-- Final cabeçalho -->
@@ -66,27 +65,84 @@
     <!-- Conteudo principal da pagina -->
     <main>
 
-        <!-- Apresentação de feitos da empresa e aspectos de nossos produtos -->
-        <section class="container-fluid apresentacaoEmpresa">
+        <!-- Section with all products of site -->
+        <section id="containerAllProducts">
             <div class="row">
-                <div class="col textoApresentacao">
-                    <h4 class="tituloPaginaSobre">Who are we?</h4>
-                    <p class="conteudoSobreEmpresa">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="container productsDisplay">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="../css/assets/imgTest2.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="product1.html" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col dadosEmpresa">
-                    <h4 class="">Company Information</h4>
-                    <p>
-                        nome da empresa<br/>
-                        cnpj<br/>
-                        endereço<br/>
-                        cep<br/>
-                    </p>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="container productsDisplay">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="../css/assets/imgTest2.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="container productsDisplay">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="../css/assets/imgTest2.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="container productsDisplay">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="../css/assets/imgTest2.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="container productsDisplay">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="../css/assets/imgTest2.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="container productsDisplay">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="../css/assets/imgTest2.png" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <!-- Final da secção de apresentação -->
+        <!-- End section with all products of site -->
 
         <!-- Secção para dividir as secções -->
         <section>
@@ -106,7 +162,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <h2 class="logo"><a href="#">LOGO</a></h2>
+                    <!--<h2 class="logo"><a href="#">LOGO</a></h2>-->
+                    <img class="logoFooterpage" src="../css/assets/logo_pur4vid4_footer_reduzido.jpg" alt="logoFooter" />
                 </div>
                 <div class="col-md-4">
                     <h5>Explore nossa empresa</h5>
@@ -142,7 +199,6 @@
     </footer>
     <!-- Final do rodapé do Site -->
 
-    <!-- Final do Codigo -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -153,11 +209,14 @@
     <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" crossorigin="anonymous"></script>
     <!-- AOS script da biblioteca para animação de entradas (do tipo fade) -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Slick JS -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!-- Hammer JS -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
     <!-- script com as princiapais funções do JS do Site -->
     <script src="../js/main.js" type="text/javascript"></script>
     <script src="../js/AOS.js" type="text/javascript"></script>
+    <script src="../js/slick.js" type="text/javascript"></script>
     <script src="../js/hammer.js" type="text/javascript"></script>
 </body>
 </html>
